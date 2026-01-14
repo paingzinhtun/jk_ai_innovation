@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETL Pipeline Project | JK AI Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="p-6 max-w-4xl mx-auto">
+        <a href="../index.html" class="text-blue-600 font-bold">← Back to Home</a>
+    </nav>
+
+    <main class="max-w-3xl mx-auto py-12 px-6 bg-white shadow-sm rounded-3xl mb-20">
+        <header class="mb-12">
+            <h1 class="text-4xl font-extrabold text-slate-900 mb-4">Spiritual Wisdom ETL Pipeline</h1>
+            <div class="flex gap-2">
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase">Python</span>
+                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold uppercase">Data Engineering</span>
+            </div>
+        </header>
+
+        <section class="prose prose-slate max-w-none">
+            <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
+            <p class="mb-6 leading-relaxed">
+                As part of <strong>JK AI Innovation</strong>, I built this pipeline to automate the collection and cleaning of spiritual teachings. This ensures that the data is ready for future AI model training.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4">Technical Process</h2>
+            <ul class="list-disc pl-6 space-y-3 mb-8">
+                <li><strong>Extract:</strong> Pulling raw quote data from CSV/Text sources.</li>
+                <li><strong>Transform:</strong> Using the Pandas library to clean text and add timestamps.</li>
+                <li><strong>Load:</strong> Saving structured data for analysis.</li>
+            </ul>
+
+            <div class="bg-slate-900 text-blue-400 p-6 rounded-xl font-mono text-sm overflow-x-auto mb-8">
+                <code># Snapshot of the core logic<br>
+                df = pd.read_csv('raw_data.csv')<br>
+                df['cleaned_text'] = df['text'].str.strip()<br>
+                df.to_csv('processed_data.csv')</code>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
